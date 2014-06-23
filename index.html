@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>最近の投稿 <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></h1>
+
+  <ul class="posts">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous action-button animate red"><i class="fa fa-arrow-left"></i> Prev</a>
+      {% else %}
+      <a href="/page{{ paginator.previous_page }}" class="previous action-button animate red"><i class="fa fa-arrow-left"></i> Prev</a>
+      {% endif %}
+    {% else %}
+    <span class="previous action-button animate red"><i class="fa fa-arrow-left"></i> Prev</span>
+    {% endif %}
+    <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next action-button animate blue">Next <i class="fa fa-arrow-right"></i></a>
+    {% else %}
+    <span class="next action-button animate blue">Next</span>
+    {% endif %}
+  </div>
+
+</div>

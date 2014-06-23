@@ -1,0 +1,15 @@
+# Site settings
+title: your awesome site
+email: mail@example.com
+description: "your awesome site description"
+baseurl: ""
+url: ""
+username: your_name
+disqus_shortname: your_shortname
+
+# pagination
+paginate: 5
+
+# Build settings
+markdown: kramdown
+permalink: pretty

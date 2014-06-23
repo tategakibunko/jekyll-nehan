@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  {% if page.book_type %}
+  <article class="post-content nehan-book" data-direction="{{page.book_type}}" style="display:none">
+  {% else %}
+  <article class="post-content">
+  {% endif %}
+  {{ content }}
+  </article>
+</div>
+
+{% if page.comments %}
+{% include disqus.html %}
+{% endif %}
