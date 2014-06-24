@@ -10,9 +10,9 @@ permalink: /about/
 
 ## Screen shot
 
-<a style="float:left; margin-right:20px; border:1px solid #ccc;" href="/assets/sshot-hori.png"><img src="/assets/sshot-hori.png" width="300" height="160" /></a>
+<a style="float:left; margin-right:20px; border:1px solid #ccc;" href="{{site.baseurl}}/assets/sshot-hori.png"><img src="{{site.baseurl}}/assets/sshot-hori.png" width="300" height="160" /></a>
 
-<a style="float:left; border:1px solid #ccc;" href="/assets/sshot-vert.png"><img src="/assets/sshot-vert.png" width="300" height="160" /></a>
+<a style="float:left; border:1px solid #ccc;" href="{{site.baseurl}}/assets/sshot-vert.png"><img src="{{site.baseurl}}/assets/sshot-vert.png" width="300" height="160" /></a>
 
 <div style="clear:both"></div>
 <br />

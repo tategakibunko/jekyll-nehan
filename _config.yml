@@ -2,8 +2,8 @@
 title: your awesome site
 email: mail@example.com
 description: "your awesome site description"
-baseurl: ""
 url: ""
+baseurl: "/static/jekyll-nehan"
 username: your_name
 disqus_shortname: your_shortname
 
