@@ -2,6 +2,8 @@
 
 jekyll-nehan is Jekyll theme powered by [nehan.js](https://github.com/tategakibunko/nehan.js) to display your blog post like book style.
 
+See [demo](http://tb.antiscroll.com/static/jekyll-nehan/).
+
 ## Screen shot
 
 <img src="https://raw.github.com/tategakibunko/jekyll-nehan/master/assets/sshot-hori.png" width="300" height="160" />
