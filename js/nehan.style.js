@@ -1,12 +1,7 @@
 Nehan.setStyles({
   "body":{
-    "oncreate":function(dom, ctx){
-      $(dom).fadeTo("fast", 1.0);
-    }
-  },
-  "/h[1-6]/":{
-    "oncreate":function(dom, ctx){
-      $(dom).fadeTo("slow", 1.0);
+    "oncreate":function(ctx){
+      $(ctx.dom).fadeTo("fast", 1.0);
     }
   },
   "p":{
