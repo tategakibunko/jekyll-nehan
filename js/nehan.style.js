@@ -10,7 +10,7 @@ Nehan.setStyles({
 });
 
 // font-awesome icon
-Nehan.addSingleTagByName("fa");
+Nehan.LexingRule.addSingleTagByName("fa");
 Nehan.setStyle("fa", {
   display:"inline",
   width:"1em",
