@@ -2,7 +2,7 @@ $(function(){
   $(".nehan-book").nehanBook({
     height:"40%",
     callback:{
-      onProgress : function(stream){
+      onProgress : function(tree, stream){
 	// hook when first page is generated.
 	if(stream.getPageCount() === 1){
 	  var is_vertical = stream.isVertical();
